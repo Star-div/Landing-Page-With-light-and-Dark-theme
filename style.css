@@ -37,44 +37,21 @@
     color: var(--primary-color);
   }
   
-  /* nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      background: transparent;
-      width: 100%;
-      padding: 20px 10%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      z-index: 100;
-    } */
-  
   
   .logo {
     color: #ff4321;
-    font-size: 30px;
+    font-size: 40px;
   }
   .logo span {
     color: var(--secondary-color);
+    
   }
   nav ul {
     flex: 1;
     text-align: right;
   }
   
-  nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-  }
-  nav ul li a {
-    text-decoration: none;
-    color: var(--secondary-color);
-  }
-  nav ul li a:hover {
-    color: #ff4221;
-  }
+
   .info {
     margin-top: 7%;
     margin-left: 7%;
@@ -144,37 +121,68 @@
   .social-links a:hover {
     color: #ff4321;
   }
-  #about {
-    height: 100vh;
-    width: 100%;
-    background: var(--primary-color);
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-  }
-  .imgabout img{
-      height: 200px;
-      width: 200px;
-      border: 4px solid #ff4321;
-      margin-top: 220px;
-      margin-left: 300px;
-      border-radius: 50%;
-      box-shadow: #ff4321;
-  }
   
-  #services {
-      height: 100vh;
-      width: 100%;
-      background: var(--primary-color);
-      text-align: center;
+
+    @media only screen and (max-width: 600px) {
+      .logo {
+        font-size: 27px;
+      }
+      #icon {
+        width: 22px;
+      }
+      .img-box {
+        display: none;
+      }
+
+      .info {
+        margin-top: 5%;
+        margin-left: 5%;
+      }
       
-    }
-  #services h2{
+      .info h1 {
+        font-size: 36px;
         color: var(--secondary-color);
-        padding-top: 50px;
-  
+      }
+      .info h2 {
+        font-size: 20px;
+        color: var(--secondary-color);
+      }
+      #hh {
+        margin-bottom: 18px;
+      }
+      .info span {
+        color: #ff4321;
+      }
+      .info p {
+        color: var(--secondary-color);
+        line-height: 25px;
+        font-size: 16px;
+      }
+      .info a {
+        background: var(--secondary-color);
+        padding: 9px 15px;
+        text-decoration: none;
+        color: var(--primary-color);
+        display: inline-block;
+        margin: 18px 0;
+        border-radius: 6px;
+        font-size: 16px;
+      }
+      .social-links {
+        margin-left: 8%;
+        margin-top: 3px;
+      }
+      .social-links a {
+        font-size: 28px;
+        
+        margin-right: 13px;
+      }
+      .img-box{
+        display: block;
+        height: 40%;
+      }
+      
+
     }
   
   
